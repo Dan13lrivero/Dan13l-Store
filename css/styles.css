@@ -267,3 +267,289 @@ header nav ul li:hover::after {
     top: 20%;
     left: 70%;
 }
+
+/* Media Queries para Responsive Design */
+
+/* Tablet (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    header {
+        width: 95vw;
+        padding: 15px 30px;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+    }
+    
+    header nav ul {
+        gap: 30px;
+    }
+    
+    .list {
+        width: 90%;
+    }
+    
+    .item {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .product-img {
+        width: 100%;
+        height: 40%;
+        order: 1;
+    }
+    
+    .product-img img {
+        max-width: 60%;
+        max-height: 80%;
+    }
+    
+    .content {
+        width: 100%;
+        padding-right: 0;
+        order: 2;
+        align-items: center;
+    }
+    
+    .product-name {
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    .product-description {
+        font-size: 1rem;
+        text-align: center;
+        max-width: 500px;
+    }
+    
+    .arrows {
+        width: 95%;
+    }
+    
+    .arrow-btn {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .numbers {
+        font-size: 2.5rem;
+    }
+    
+    .dot {
+        width: 35px;
+        height: 3px;
+    }
+    
+    .circle:nth-child(1) {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .circle:nth-child(2) {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .circle:nth-child(3) {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .circle:nth-child(4) {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Mobile (320px - 767px) */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+    
+    header {
+        width: 100vw;
+        padding: 10px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    header nav ul {
+        gap: 20px;
+    }
+    
+    header nav ul li {
+        font-size: 0.9rem;
+    }
+    
+    .list {
+        width: 95%;
+    }
+    
+    .item {
+        gap: 20px;
+        padding: 20px 0;
+    }
+    
+    .product-img {
+        height: 35%;
+    }
+    
+    .product-img img {
+        max-width: 70%;
+        max-height: 90%;
+    }
+    
+    .product-tag {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+    
+    .product-name {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+    
+    .product-description {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    
+    .btn {
+        padding: 10px 14px;
+        font-size: 0.9rem;
+    }
+    
+    .arrows {
+        width: 100%;
+        top: 45%;
+    }
+    
+    .arrow-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .arrow-btn svg {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .indicators {
+        bottom: 20px;
+        gap: 10px;
+    }
+    
+    .numbers {
+        font-size: 2rem;
+    }
+    
+    .dots {
+        gap: 8px;
+    }
+    
+    .dot {
+        width: 30px;
+        height: 3px;
+    }
+    
+    .circle:nth-child(1) {
+        width: 100px;
+        height: 100px;
+        top: 5%;
+        left: 5%;
+    }
+    
+    .circle:nth-child(2) {
+        width: 120px;
+        height: 120px;
+        top: 70%;
+        left: 85%;
+    }
+    
+    .circle:nth-child(3) {
+        width: 80px;
+        height: 80px;
+        top: 80%;
+        left: 10%;
+    }
+    
+    .circle:nth-child(4) {
+        width: 60px;
+        height: 60px;
+        top: 15%;
+        left: 80%;
+    }
+    
+    .container::before {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Mobile pequeño (320px - 480px) */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 8px 15px;
+        gap: 10px;
+    }
+    
+    .logo {
+        font-size: 1rem;
+    }
+    
+    header nav ul {
+        gap: 15px;
+    }
+    
+    header nav ul li {
+        font-size: 0.8rem;
+    }
+    
+    .product-name {
+        font-size: 1.5rem;
+    }
+    
+    .product-description {
+        font-size: 0.8rem;
+        padding: 0 5px;
+    }
+    
+    .btn {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .arrow-btn {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .arrow-btn svg {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .numbers {
+        font-size: 1.5rem;
+    }
+    
+    .dot {
+        width: 25px;
+        height: 2px;
+    }
+    
+    .indicators {
+        bottom: 15px;
+    }
+}
